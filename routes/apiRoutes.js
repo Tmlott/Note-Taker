@@ -12,7 +12,7 @@ router.get('/notes', (req, res) => {
         }
         holdData = JSONS.parse(data);
         res.json(JSON.parse(datat));
-    });
+    };
 });
 
 router.post('/notes', ({ body },res) => {
@@ -45,9 +45,9 @@ router.delete('/notes/:id', (req, res) => {
             }
         }); 
      res.json({
-            mesage: 'successful removal'
+            mesage: 'successful removal',
             data: req.params.id
         });
     });
 
-    module.exports - router
+    module.exports = router;
