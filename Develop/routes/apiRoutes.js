@@ -44,7 +44,7 @@ router.delete('/notes/:id', (req, res) => {
                 return;
             }
         }); 
-        res.json({
+     res.json({
             mesage: 'successful removal'
             data: req.params.id
         });
